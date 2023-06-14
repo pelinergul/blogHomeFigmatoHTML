@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Home</title>
+    <link rel="stylesheet" href="assets/css/blogHome.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- header baslangic -->
+        <header>
+            <div class="navLogo">
+                <img src="assets/img/nav-logo.svg" alt="">
+            </div>
+            <div class="navMain">
+                <div class="user">
+                    <img src="assets/img/navbar-avatar.svg" alt="">
+                    <span> Bruce Lee </span>
+                    <img src="assets/img/ok-icon.svg" alt="">
+                </div>
+                <img src="assets/img/nav-icon1.svg" alt="">
+                <img src="assets/img/nav-icon2.svg" alt="">
+
+            </div>
+        </header>
+        <!-- header bitis -->
+    </div>
+        <!-- banner baslangic -->
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="background-image: url('assets/img/banner-background.jpg');">
+            <div class="bannerMain">
+                <h1>5 mind blowing facts about the iPhone 14</h1>
+                <div class="bannerUser">
+                    <img src="assets/img/banner-avatar.svg" alt="">
+                    <span>Farok Rastegar  .  1 hour ago</span>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides fade" style="background-image: url('assets/img/banner-background.jpg');">
+            <div class="bannerMain">
+                <h1>5 mind blowing facts about the iPhone 14</h1>
+                <div class="bannerUser">
+                    <img src="assets/img/banner-avatar.svg" alt="">
+                    <span>Farok Rastegar  .  1 hour ago</span>
+                </div>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+        <!-- banner bitis -->
+        <!-- section1 baslangic -->
+    <div class="container">
+        <div class="section1">
+            <h3>Featured articles</h3>
+            <div class="section1Cards">
+                <div class="card">
+                    <img src="assets/img/section1-card1.jpg" alt="">
+                    <h4>10 beaches you must visit</h4>
+                    <div class="userMain">
+                        <img src="assets/img/navbar-avatar.svg" alt="">
+                        <span>Farok Rastegar  .  1 hour ago</span>
+                    </div>
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the…</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/section1-card2.jpg" alt="">
+                    <h4>10 beaches you must visit</h4>
+                    <div class="userMain">
+                        <img src="assets/img/navbar-avatar.svg" alt="">
+                        <span>Farok Rastegar  .  1 hour ago</span>
+                    </div>
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the…</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/section1-card3.jpg" alt="">
+                    <h4>10 beaches you must visit</h4>
+                    <div class="userMain">
+                        <img src="assets/img/navbar-avatar.svg" alt="">
+                        <span>Farok Rastegar  .  1 hour ago</span>
+                    </div>
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the…</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/section1-card4.jpg" alt="">
+                    <h4>10 beaches you must visit</h4>
+                    <div class="userMain">
+                        <img src="assets/img/navbar-avatar.svg" alt="">
+                        <span>Farok Rastegar  .  1 hour ago</span>
+                    </div>
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the…</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/section1-card5.jpg" alt="">
+                    <h4>10 beaches you must visit</h4>
+                    <div class="userMain">
+                        <img src="assets/img/navbar-avatar.svg" alt="">
+                        <span>Farok Rastegar  .  1 hour ago</span>
+                    </div>
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the…</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/section1-card6.jpg" alt="">
+                    <h4>10 beaches you must visit</h4>
+                    <div class="userMain">
+                        <img src="assets/img/navbar-avatar.svg" alt="">
+                        <span>Farok Rastegar  .  1 hour ago</span>
+                    </div>
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the…</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+
+          slides[slideIndex-1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>
