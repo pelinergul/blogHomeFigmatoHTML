@@ -344,6 +344,8 @@ header .navMain .user span {
 
 /* section4 bitis  */
 
+/* footer baslangic */
+
 .footerTop {
     display: flex;
     justify-content: space-between;
@@ -415,6 +417,8 @@ header .navMain .user span {
     height: 1px;
     background-color: #EAEAEA;
 }
+
+/* footer bitis */
 
 
 
